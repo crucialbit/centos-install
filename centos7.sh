@@ -20,6 +20,8 @@ echo "Allow http/https connection."
 firewall-cmd --add-service=http --permanent
 firewall-cmd --add-service=https --permanent
 
+firewall-cmd --reload
+
 echo "Upgrading server"
 yum -y update
 
